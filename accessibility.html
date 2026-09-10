@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Accessibility — Kashaf</title>
+<meta name="description" content="Accessibility for Kashaf">
+<link rel="stylesheet" href="style.css">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 48 48' role='img' aria-label='Kashaf'%3E %3Ctitle%3EKashaf%3C/title%3E %3Crect x='2' y='2' width='44' height='44' rx='9' fill='%2312312C'/%3E %3Cg stroke='%232C5A52' stroke-width='1' opacity='.85'%3E %3Cpath d='M2 16h44M2 26h44M2 36h44M14 2v44M26 2v44M36 2v44'/%3E %3C/g%3E %3Cpath d='M9 37C15 37 17 12 26 12s12 13 13 18' fill='none' stroke='%235FBFAE' stroke-width='3.4' stroke-linecap='round'/%3E %3Ccircle cx='26' cy='12' r='5' fill='%23C8791A'/%3E %3Ccircle cx='26' cy='12' r='2' fill='%2312312C'/%3E %3C/svg%3E">
+<meta name="theme-color" content="#12312C">
+<meta property="og:title" content="Accessibility — Kashaf">
+<meta property="og:description" content="Accessibility for Kashaf">
+<meta property="og:type" content="website">
+</head>
+<body>
+<header class="site">
+  <div class="wrap">
+    <a class="brand" href="index.html">
+      <img src="logo-mark.png" alt="" width="36" height="36">
+      <span>Kashaf</span>
+    </a>
+    <button class="navtoggle" type="button" aria-expanded="false"
+            aria-controls="primary-nav" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+    <nav class="main" id="primary-nav" aria-label="Main">
+      <a href="index.html">Home</a>
+      <a href="for-teachers.html">For teachers</a>
+      <a href="board.html">Online board</a>
+      <a href="worksheets.html">Worksheets</a>
+      <a href="books.html">Books</a>
+      <a href="about.html">About</a>
+    </nav>
+    <div class="headend">
+      <a class="login" href="contact.html">Log in</a>
+      <a class="btn primary small" href="board.html">Start teaching</a>
+    </div>
+  </div>
+</header>
+
+<section>
+  <div class="wrap prose">
+    <h1>Accessibility</h1>
+    <p class="meta">Version 1.0 · 03 September 2026 · Earlier versions stay available at
+      /accessibility/v1.html</p>
+    <p>We aim to meet WCAG 2.1 level AA. This page says honestly where we are.</p>
+    <h2>What works</h2>
+   <ul>
+     <li>All of the site can be used with a keyboard.</li>
+     <li>Text contrast meets AA.</li>
+     <li>Headings are in a real order, and images have text alternatives.</li>
+     <li>The page reflows to one column on a phone with no sideways scrolling.</li>
+     <li>Text can be enlarged to 200% without losing anything.</li>
+     <li>Buttons in the tools are at least 44 pixels, the recommended touch size.</li>
+   </ul>
+
+   <h2>What does not, yet</h2>
+   <ul>
+     <li>Drawing on the whiteboard needs a pointing device. There is no keyboard
+       equivalent for freehand drawing.</li>
+     <li>Graphs and diagrams are drawings; a screen reader cannot describe their
+       contents.</li>
+     <li>The 3D view needs dragging to rotate.</li>
+   </ul>
+   <p>We are looking at text descriptions for generated graphs, which would help
+     most.</p>
+
+   <h2>Telling us about a problem</h2>
+   <p>If something is unusable for you, please <a href="contact.html">tell us</a> and
+     say what you were trying to do. TODO(company): accessibility contact address.</p>
+  </div>
+</section>
+
+<footer class="site">
+  <div class="wrap">
+    <div class="cols">
+      <div class="about">
+        <img src="logo-mark.png" alt="" width="44" height="44">
+        <strong>Kashaf</strong>
+        <p>Teach. Create. Inspire.</p>
+      </div>
+      <div>
+        <h4>For teachers</h4>
+        <a href="board.html">Online board</a>
+        <a href="worksheets.html">Worksheet generator</a>
+        <a href="for-teachers.html">Teaching with Kashaf</a>
+        <a href="pricing.html">Pricing</a>
+      </div>
+      <div>
+        <h4>For students</h4>
+        <a href="books.html">Books</a>
+        <a href="help.html">Getting started</a>
+      </div>
+      <div>
+        <h4>Company</h4>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+        <a href="for-schools.html">For schools</a>
+        <a href="privacy.html">Privacy</a>
+        <a href="terms.html">Terms</a>
+      </div>
+    </div>
+    <div class="fine">
+      Everything a teacher needs for an online class, in one place.<br>
+      TODO(company): registered name, address and contact email.
+    </div>
+  </div>
+</footer>
+
+<script src="app.js"></script>
+</body>
+</html>

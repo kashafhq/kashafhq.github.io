@@ -1,0 +1,164 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>For schools — Kashaf</title>
+<meta name="description" content="Privacy, security and the data processing agreement for schools.">
+<link rel="stylesheet" href="style.css">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 48 48' role='img' aria-label='Kashaf'%3E %3Ctitle%3EKashaf%3C/title%3E %3Crect x='2' y='2' width='44' height='44' rx='9' fill='%2312312C'/%3E %3Cg stroke='%232C5A52' stroke-width='1' opacity='.85'%3E %3Cpath d='M2 16h44M2 26h44M2 36h44M14 2v44M26 2v44M36 2v44'/%3E %3C/g%3E %3Cpath d='M9 37C15 37 17 12 26 12s12 13 13 18' fill='none' stroke='%235FBFAE' stroke-width='3.4' stroke-linecap='round'/%3E %3Ccircle cx='26' cy='12' r='5' fill='%23C8791A'/%3E %3Ccircle cx='26' cy='12' r='2' fill='%2312312C'/%3E %3C/svg%3E">
+<meta name="theme-color" content="#12312C">
+<meta property="og:title" content="For schools — Kashaf">
+<meta property="og:description" content="Privacy, security and the data processing agreement for schools.">
+<meta property="og:type" content="website">
+</head>
+<body>
+<header class="site">
+  <div class="wrap">
+    <a class="brand" href="index.html">
+      <img src="logo-mark.png" alt="" width="36" height="36">
+      <span>Kashaf</span>
+    </a>
+    <button class="navtoggle" type="button" aria-expanded="false"
+            aria-controls="primary-nav" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+    <nav class="main" id="primary-nav" aria-label="Main">
+      <a href="index.html">Home</a>
+      <a href="for-teachers.html">For teachers</a>
+      <a href="board.html">Online board</a>
+      <a href="worksheets.html">Worksheets</a>
+      <a href="books.html">Books</a>
+      <a href="about.html">About</a>
+    </nav>
+    <div class="headend">
+      <a class="login" href="contact.html">Log in</a>
+      <a class="btn primary small" href="board.html">Start teaching</a>
+    </div>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="wrap">
+    <h1>For schools</h1>
+    <p class="lead">Everything your data protection officer will ask for, on one page.</p>
+  </div>
+</section>
+
+<section>
+  <div class="wrap prose">
+    <h2>The short version</h2>
+    <p>Students do not have accounts. They type a first name and join with a code.
+      Their work lives in memory for the length of the lesson and is then deleted.
+      Nothing on the page is loaded from another company. There is no advertising,
+      no analytics and no behaviour scoring.</p>
+
+    <h2>What is collected, and for how long</h2>
+    <table>
+<tr><th>What we hold about a teacher</th><td>Email, name, password (hashed with Argon2),
+  the lessons and worksheets they save.</td></tr>
+<tr><th>What we hold about a student</th><td>A first name, for the length of the lesson.
+  Nothing else. No email, no surname, no date of birth, no password, no account.</td></tr>
+<tr><th>Where student work lives</th><td>In the server's memory during the lesson.
+  It is never written to the database.</td></tr>
+<tr><th>Sessions</th><td>Deleted 24 hours after the lesson ends.</td></tr>
+<tr><th>Submitted work</th><td>Deleted after 7 days unless the teacher exports it.</td></tr>
+<tr><th>Teacher account</th><td>Deleted 30 days after cancellation.</td></tr>
+<tr><th>Log files</th><td>IP addresses shortened after 7 days.</td></tr>
+<tr><th>Third parties in the page</th><td>None. No analytics, no advertising,
+  no external fonts, no error reporting.</td></tr>
+<tr><th>Cookies</th><td>One, for teacher login. No banner is needed and none is shown.</td></tr>
+<tr><th>Monitoring</th><td>The student's board only. Never their camera, microphone,
+  screen, tabs, keystrokes or location.</td></tr>
+<tr><th>Behaviour records</th><td>None. No engagement scores, no idle logs,
+  no record of who was paused.</td></tr>
+<tr><th>Uploaded images</th><td>Location data is stripped from every one, on the server,
+  always.</td></tr>
+</table>
+
+    <h2>Roles</h2>
+    <p>For a school deployment the school is the controller and Kashaf is the
+      processor. We act on the school's instructions. The
+      <a href="dpa.html">data processing agreement</a> sets that out in a document
+      you can sign.</p>
+
+    <h2>Where the data is</h2>
+    <p class="todo">TODO(company): name the hosting provider and the country, and
+      state whether a different region can be chosen.</p>
+
+    <h2>Security</h2>
+    <p>Argon2 password hashing, TLS throughout, rate limits on sign-in and on room
+      codes, a content security policy that permits no third-party origin, signed
+      short-lived links for submitted work, and daily encrypted backups. The
+      <a href="security.html">security page</a> has the detail.</p>
+
+    <h2>Sub-processors</h2>
+    <p>Hosting and file storage only. The <a href="subprocessors.html">list</a>
+      names them. There are no others, because nothing else is loaded into the page.</p>
+
+    <h2>The standard questions</h2>
+    <h3>Do you use student data to train anything?</h3>
+    <p>No. It is not retained long enough to be usable for anything, and we do not
+      train models.</p>
+    <h3>Can a parent ask for their child's work to be removed?</h3>
+    <p>Yes, through the school, at any time. In practice it will already have been
+      deleted — see the retention table above. Use the
+      <a href="data-request.html">data request form</a>.</p>
+    <h3>Is there an audit trail of what a student did?</h3>
+    <p>No, deliberately. Discipline records generated by software are a liability
+      for the school and a harm to the student.</p>
+    <h3>Can students contact each other?</h3>
+    <p>No. There is no student-to-student channel of any kind. Students cannot see
+      each other's boards.</p>
+    <h3>What happens if you stop operating?</h3>
+    <p>Lessons and worksheets export as ordinary files. The whiteboard also runs as
+      a single file with no server at all, so a school that has downloaded it keeps
+      a working copy.</p>
+
+    <h2>Getting a copy of the paperwork</h2>
+    <p>The <a href="dpa.html">data processing agreement</a>, the
+      <a href="privacy.html">privacy notice</a> and the
+      <a href="security.html">security overview</a> are all on this site and can be
+      printed. For anything else, <a href="contact.html">get in touch</a>.</p>
+  </div>
+</section>
+
+<footer class="site">
+  <div class="wrap">
+    <div class="cols">
+      <div class="about">
+        <img src="logo-mark.png" alt="" width="44" height="44">
+        <strong>Kashaf</strong>
+        <p>Teach. Create. Inspire.</p>
+      </div>
+      <div>
+        <h4>For teachers</h4>
+        <a href="board.html">Online board</a>
+        <a href="worksheets.html">Worksheet generator</a>
+        <a href="for-teachers.html">Teaching with Kashaf</a>
+        <a href="pricing.html">Pricing</a>
+      </div>
+      <div>
+        <h4>For students</h4>
+        <a href="books.html">Books</a>
+        <a href="help.html">Getting started</a>
+      </div>
+      <div>
+        <h4>Company</h4>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+        <a href="for-schools.html">For schools</a>
+        <a href="privacy.html">Privacy</a>
+        <a href="terms.html">Terms</a>
+      </div>
+    </div>
+    <div class="fine">
+      Everything a teacher needs for an online class, in one place.<br>
+      TODO(company): registered name, address and contact email.
+    </div>
+  </div>
+</footer>
+
+<script src="app.js"></script>
+</body>
+</html>
